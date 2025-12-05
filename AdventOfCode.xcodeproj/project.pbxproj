@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B1C09EB52EE36556001E84A6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C09EAF2EE36556001E84A6 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		B1C09E972EDFD344001E84A6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,13 +23,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B1C09E992EDFD345001E84A6 /* AdventOfCode2025 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode2025; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C09E992EDFD345001E84A6 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C09EAF2EE36556001E84A6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B1C09E9B2EDFD345001E84A6 /* AdventOfCode2025 */ = {
+		B1C09EB62EE36628001E84A6 /* 2025 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AdventOfCode2025;
+			path = 2025;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -44,7 +49,7 @@
 		B1C09E902EDFD344001E84A6 = {
 			isa = PBXGroup;
 			children = (
-				B1C09E9B2EDFD345001E84A6 /* AdventOfCode2025 */,
+				B1C09EB02EE36556001E84A6 /* AdventOfCode */,
 				B1C09E9A2EDFD345001E84A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,17 +57,26 @@
 		B1C09E9A2EDFD345001E84A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1C09E992EDFD345001E84A6 /* AdventOfCode2025 */,
+				B1C09E992EDFD345001E84A6 /* AdventOfCode */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C09EB02EE36556001E84A6 /* AdventOfCode */ = {
+			isa = PBXGroup;
+			children = (
+				B1C09EAF2EE36556001E84A6 /* main.swift */,
+				B1C09EB62EE36628001E84A6 /* 2025 */,
+			);
+			path = AdventOfCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B1C09E982EDFD344001E84A6 /* AdventOfCode2025 */ = {
+		B1C09E982EDFD344001E84A6 /* AdventOfCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1C09EA02EDFD345001E84A6 /* Build configuration list for PBXNativeTarget "AdventOfCode2025" */;
+			buildConfigurationList = B1C09EA02EDFD345001E84A6 /* Build configuration list for PBXNativeTarget "AdventOfCode" */;
 			buildPhases = (
 				B1C09E952EDFD344001E84A6 /* Sources */,
 				B1C09E962EDFD344001E84A6 /* Frameworks */,
@@ -73,13 +87,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B1C09E9B2EDFD345001E84A6 /* AdventOfCode2025 */,
+				B1C09EB62EE36628001E84A6 /* 2025 */,
 			);
-			name = AdventOfCode2025;
+			name = AdventOfCode;
 			packageProductDependencies = (
 			);
 			productName = AdventOfCode2025;
-			productReference = B1C09E992EDFD345001E84A6 /* AdventOfCode2025 */;
+			productReference = B1C09E992EDFD345001E84A6 /* AdventOfCode */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B1C09E942EDFD344001E84A6 /* Build configuration list for PBXProject "AdventOfCode2025" */;
+			buildConfigurationList = B1C09E942EDFD344001E84A6 /* Build configuration list for PBXProject "AdventOfCode" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -111,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B1C09E982EDFD344001E84A6 /* AdventOfCode2025 */,
+				B1C09E982EDFD344001E84A6 /* AdventOfCode */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C09EB52EE36556001E84A6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +203,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -244,6 +260,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -256,7 +273,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -269,14 +285,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B1C09E942EDFD344001E84A6 /* Build configuration list for PBXProject "AdventOfCode2025" */ = {
+		B1C09E942EDFD344001E84A6 /* Build configuration list for PBXProject "AdventOfCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1C09E9E2EDFD345001E84A6 /* Debug */,
@@ -285,7 +300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1C09EA02EDFD345001E84A6 /* Build configuration list for PBXNativeTarget "AdventOfCode2025" */ = {
+		B1C09EA02EDFD345001E84A6 /* Build configuration list for PBXNativeTarget "AdventOfCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1C09EA12EDFD345001E84A6 /* Debug */,
