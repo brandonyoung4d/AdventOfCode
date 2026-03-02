@@ -9,4 +9,4 @@ import Foundation
 
 print("Hello, Advent of Code 2025!")
 
-year2026Day8Part1()
+year2026Day10Part1()
